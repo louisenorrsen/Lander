@@ -68,9 +68,16 @@
                 }
             };
 
-            foreach (Land land in länder)
+            //foreach (Land land in länder)
+            //{
+            //    land.Print();
+            //}
+            for (int i = 0; i < länder.Length; i++)
             {
-                land.Print();
+                if (länder[i].styrestyp == "Republik")
+                {
+                    Console.WriteLine(länder[i].namn);
+                }
             }
         }
     }
