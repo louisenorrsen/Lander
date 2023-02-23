@@ -72,11 +72,12 @@
             //{
             //    land.Print();
             //}
+
             for (int i = 0; i < länder.Length; i++)
             {
                 if (länder[i].styrestyp == "Republik")
                 {
-                    Console.WriteLine(länder[i].namn);
+                    Console.WriteLine($"Index: {i} | Land: {länder[i].namn}");
                 }
             }
         }
