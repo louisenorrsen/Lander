@@ -1,10 +1,11 @@
-﻿namespace Lander
+﻿using System.Linq;
+namespace Lander
 {
     internal class Program
     {
         class Land
         {
-            public string namn, styrestyp, huvudstad;
+            public string namn = string.Empty, styrestyp = string.Empty, huvudstad = string.Empty;
             public int invånartal;
 
             public void Print()
@@ -14,21 +15,21 @@
         }
         static void Main(string[] args)
         {
-            Land sverige = new Land()
+            Land sverige = new()
             {
                 namn = "Sverige",
                 styrestyp = "Monarki",
                 huvudstad = "Stockholm",
                 invånartal = 10512820
             };
-            Land tyskland = new Land()
+            Land tyskland = new()
             {
                 namn = "Tyskland",
                 styrestyp = "Republik",
                 huvudstad = "Berlin",
                 invånartal = 83783902
             };
-            Land sanmarino = new Land()
+            Land sanmarino = new()
             {
                 namn = "San Marino",
                 styrestyp = "Republik",
@@ -36,7 +37,7 @@
                 invånartal = 33600
             };
 
-            Land[] länder = new Land[7] 
+            Land[] länder = new Land[7]
             { sverige, tyskland, sanmarino,
                 new Land()
                 {
@@ -56,7 +57,7 @@
                 {
                     namn = "Tjekien",
                     styrestyp = "Republik",
-                    huvudstad = "San Marino",
+                    huvudstad = "Prag",
                     invånartal = 10551219
                 },
                 new Land()
@@ -73,11 +74,28 @@
             //    land.Print();
             //}
 
+            //for (int i = 0; i < länder.Length; i++)
+            //{
+            //    if (länder[i].styrestyp == "Republik")
+            //    {                    
+            //        Console.WriteLine($"Index: {i} | Land: {länder[i].namn}");
+            //    }
+            //}
+            //int lägsta = länder.Where(x => x.styrestyp == "Republik").Min(x=>x.invånartal);
+            //int högsta = länder.Where(x => x.styrestyp == "Republik").Max(x=>x.invånartal);
+            int lägsta = länder.Min(x => x.invånartal);
+            int högsta = länder.Max(x => x.invånartal);
             for (int i = 0; i < länder.Length; i++)
             {
-                if (länder[i].styrestyp == "Republik")
+                if (länder[i].styrestyp == "Republik" && länder[i].invånartal == lägsta)
                 {
-                    Console.WriteLine($"Index: {i} | Land: {länder[i].namn}");
+                    Console.WriteLine($"=== Republik med minsta invånarantal ===");
+                    länder[i].Print();
+                }
+                if (länder[i].styrestyp == "Republik" && länder[i].invånartal == högsta)
+                {
+                    Console.WriteLine($"=== Republik med största invånarantal ===");
+                    länder[i].Print();
                 }
             }
         }
