@@ -1,0 +1,15 @@
+C:\Users\louis\skola\IDP\programmering\Github\Lander\bin\Debug\net6.0\Lander.exe
+C:\Users\louis\skola\IDP\programmering\Github\Lander\bin\Debug\net6.0\Lander.deps.json
+C:\Users\louis\skola\IDP\programmering\Github\Lander\bin\Debug\net6.0\Lander.runtimeconfig.json
+C:\Users\louis\skola\IDP\programmering\Github\Lander\bin\Debug\net6.0\Lander.dll
+C:\Users\louis\skola\IDP\programmering\Github\Lander\bin\Debug\net6.0\Lander.pdb
+C:\Users\louis\skola\IDP\programmering\Github\Lander\obj\Debug\net6.0\Lander.csproj.AssemblyReference.cache
+C:\Users\louis\skola\IDP\programmering\Github\Lander\obj\Debug\net6.0\Lander.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\louis\skola\IDP\programmering\Github\Lander\obj\Debug\net6.0\Lander.AssemblyInfoInputs.cache
+C:\Users\louis\skola\IDP\programmering\Github\Lander\obj\Debug\net6.0\Lander.AssemblyInfo.cs
+C:\Users\louis\skola\IDP\programmering\Github\Lander\obj\Debug\net6.0\Lander.csproj.CoreCompileInputs.cache
+C:\Users\louis\skola\IDP\programmering\Github\Lander\obj\Debug\net6.0\Lander.dll
+C:\Users\louis\skola\IDP\programmering\Github\Lander\obj\Debug\net6.0\refint\Lander.dll
+C:\Users\louis\skola\IDP\programmering\Github\Lander\obj\Debug\net6.0\Lander.pdb
+C:\Users\louis\skola\IDP\programmering\Github\Lander\obj\Debug\net6.0\Lander.genruntimeconfig.cache
+C:\Users\louis\skola\IDP\programmering\Github\Lander\obj\Debug\net6.0\ref\Lander.dll
